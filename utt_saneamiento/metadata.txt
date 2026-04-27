@@ -1,0 +1,14 @@
+[general]
+name=UTT Saneamiento
+qgisMinimumVersion=3.16
+description=Plugin base para aplicar filtros administrativos a multiples capas de saneamiento.
+version=0.1.0
+author=UTT
+email=dev@utt.local
+about=MVP del plugin UTT Saneamiento para detectar capas cargadas y filtrar por Departamento, Pedania o Localidad.
+tracker=
+repository=
+category=Plugins
+icon=icon.png
+experimental=False
+deprecated=False

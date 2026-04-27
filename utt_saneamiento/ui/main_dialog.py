@@ -89,8 +89,12 @@ class UttSaneamientoDialog(QDialog):
     def refresh_layers_and_filters(self):
         """Actualiza lista de capas y reinicia combos de filtro."""
         self.layers_list.clear()
-        for layer in self.filter_manager.loaded_vector_layers():
+        compatible_layers = self.filter_manager.compatible_layers()
+        for layer in compatible_layers:
             self.layers_list.addItem(layer.name())
+
+        if not compatible_layers:
+            self.layers_list.addItem("(No hay capas compatibles con filtros administrativos)")
 
         self._load_departamentos()
         self._reset_combo(self.pedania_combo, "-- Seleccionar Pedanía --")

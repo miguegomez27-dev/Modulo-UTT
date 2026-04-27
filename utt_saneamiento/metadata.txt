@@ -9,6 +9,6 @@ about=MVP del plugin UTT Saneamiento para detectar capas cargadas y filtrar por 
 tracker=
 repository=
 category=Plugins
-icon=icon.png
 experimental=False
 deprecated=False
+
